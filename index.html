@@ -4,28 +4,54 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="gethab.css">
 	<script type="text/javascript">
+
+		function randomtext(){
+			var facts=[
+            "For some reason, when he draws with extreme focus or deep emotions (that's what he said), it ends up worse than if he just draws without it.",
+            "He is planning to start a VTuber channel about a character that accidentally drank a gender reversal potion, and is trying to get enough money to purchase another one.",
+            "His favorite food is Spaghetti.",
+            "He thought of something called 'Mango Cheese Latte', but has never tried Latte before.",
+			"He hid a secret message.",
+			"He has a lot of fictional stories he can make a comic about, but can't ever get to making them.",
+			"He only had the fascination for the 'SpiderRoach' 2 months ago.",
+			"He wants to become a game developer.",
+			"He takes care of 1 cat and 6 dogs.",
+			"One of his dogs is a Husky.",
+			"His former classmates/friends (High School) know about his singing voice, but will most likely be never heard in public.",
+			"He likes playing computer games.",
+			"You'll most likely never catch him singing.",
+			"If you do catch him singing, never let yourself be discovered.",
+			"He made a Twitter account just for giveaways.",
+			"He's a fan of cryptic messages, but never tries to solve any one that the finds.",
+			"He has played a lot of games of different genres.",
+			"He only got to Night 4 at best on FNAF",
+			"He's a bit of a 'Chuunibyou'."
+        ];
+			return facts[Math.floor((Math.random() * 18.9))];
+		}
+
 		function ShowInfo(){
 			var F =false;
 			if(document.getElementById('f1').checked == true){
 				F = document.getElementById('f1').value
 				document.getElementById('FC').innerHTML = ""
-				document.getElementById('FC').innerHTML = "Flavor is available!a"
+				document.getElementById('FC').innerHTML = "Charles' favorite CMSC subject so far is CMSC 12. \n \n He did not provide any reason other than that it was the easiest and probably because Python was used."
 			}else if (document.getElementById('f2').checked == true) {
 				F = document.getElementById('f2').value
 				document.getElementById('FC').innerHTML = ""
-				document.getElementById('FC').innerHTML = "Flavor is available!b"
+				document.getElementById('FC').innerHTML = "Charles' favorite GE so far is Ethics (Ethics 1 to be specific). \n \n His reason was due to him learning more about different religions and views on life."
 			}else if (document.getElementById('f3').checked == true){
 				F = document.getElementById('f3').value
 				document.getElementById('FC').innerHTML = ""
-				document.getElementById('FC').innerHTML = "Flavor is available!c"
+				document.getElementById('FC').innerHTML = "Charles' favorite programming language so far is Java. \n \n His Reason was due to Java being one of the more known languages that can be used to create games."
 			}else if (document.getElementById('f4').checked == true) {
 				F = document.getElementById('f4').value
 				document.getElementById('FC').innerHTML = ""
-				document.getElementById('FC').innerHTML = "Flavor is available!d"
+				document.getElementById('FC').innerHTML = "Spaghetti."
 			}else if (document.getElementById('f5').checked == true){
 				F = document.getElementById('f5').value
 				document.getElementById('FC').innerHTML = ""
-				document.getElementById('FC').innerHTML = "Flavor is available!e"
+				document.getElementById('FC').innerHTML = randomtext()
 			}
 			else{
 				document.getElementById('FError').innerHTML = "Please select information to show"
@@ -49,9 +75,9 @@
 		<br><b>
 		Student Name:</b>Charles Joshua Barile<br><br><b>
 		Nickname:</b>Charles<br><br>
-		(You can also call me CJ. Not used to being called Joshua.)
+		(He can also be called as CJ. He is not used to being called Joshua.)
 		<br><br><b>
-		Information Options:</b><br>
+			Additional Information Options:</b><br>
 			<input type="radio" name="Flavor" id="f1">Favorite CMSC Subject
 			<br>
 			<input type="radio" name="Flavor" id="f2">Favorite GE
@@ -62,9 +88,11 @@
 			<br>
 			<input type="radio" name="Flavor" id="f5">Facts about Charles
 			<br>
-			<br><button onclick="ShowInfo()">Check Flavor Availability</button><br>
+			<br><button onclick="ShowInfo()">Display Info</button><br>
 			<label id="FC"></label>
 			<br>
+
+
 			
 		<br><br><br><br><br><br>
 
@@ -75,4 +103,8 @@
 
 </body></html>
 
+<b></b>
 
+
+
+01000111 01110101 01110010 00100000 01100010 01100101 01110110 01110100 01110110 01100001 01101110 01111001 00100000 01110101 01100111 01111010 01111001 00100000 01110011 01110110 01111001 01110010 00100000 01101010 01101110 01100110 00100000 01110011 01100101 01100010 01111010 00100000 01101110 01100001 00100000 01101110 01100110 01100110 01110110 01110100 01100001 01111010 01110010 01100001 01100111 00100000 01110100 01110110 01101001 01110010 01100001 00100000 01110110 01100001 00100000 01010000 01011010 01000110 01010000 00100000 00110010 00110010 00101110 00100000 01010110 01100111 00100000 01100101 01110010 01100100 01101000 01110110 01100101 01110010 01110001 00100000 01100111 01110101 01110010 01111010 00100000 01100111 01100010 00100000 01110000 01100101 01110010 01101110 01100111 01110010 00100000 01101110 01100001 00100000 01110101 01100111 01111010 01111001 00100000 01101010 01110110 01100111 01110101 00100000 01101111 01101000 01100111 01100111 01100010 01100001 01100110 00100000 01101110 01100001 01110001 00100000 01110110 01100001 01100011 01101000 01100111 00101110 00100000 01010101 01110010 00100000 01111010 01101110 01110001 01110010 00100000 01101110 00100000 01110011 01100101 01110010 01110010 00100000 01100011 01110110 01101101 01101101 01101110 00100000 01101010 01110010 01101111 01100110 01110110 01100111 01110010 00101110
