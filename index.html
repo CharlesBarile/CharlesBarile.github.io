@@ -4,7 +4,33 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="gethab.css">
 	<script type="text/javascript">
-
+		function ShowInfo(){
+			var F =false;
+			if(document.getElementById('f1').checked == true){
+				F = document.getElementById('f1').value
+				document.getElementById('FC').innerHTML = ""
+				document.getElementById('FC').innerHTML = "Flavor is available!a"
+			}else if (document.getElementById('f2').checked == true) {
+				F = document.getElementById('f2').value
+				document.getElementById('FC').innerHTML = ""
+				document.getElementById('FC').innerHTML = "Flavor is available!b"
+			}else if (document.getElementById('f3').checked == true){
+				F = document.getElementById('f3').value
+				document.getElementById('FC').innerHTML = ""
+				document.getElementById('FC').innerHTML = "Flavor is available!c"
+			}else if (document.getElementById('f4').checked == true) {
+				F = document.getElementById('f4').value
+				document.getElementById('FC').innerHTML = ""
+				document.getElementById('FC').innerHTML = "Flavor is available!d"
+			}else if (document.getElementById('f5').checked == true){
+				F = document.getElementById('f5').value
+				document.getElementById('FC').innerHTML = ""
+				document.getElementById('FC').innerHTML = "Flavor is available!e"
+			}
+			else{
+				document.getElementById('FError').innerHTML = "Please select information to show"
+			}
+		}
 	</script>
 </head>
 <body><div id="body">
@@ -26,17 +52,19 @@
 		(Can also be called as CJ. Not used to being called Joshua.)
 		<br><br><b>
 		Information Options:</b><br>
-		<form action="displayinfo">
-		<label for="info">Choose information to display:</label>
-			<select name="options" id="opt">
-				<option value="subj">Favorite CMSC Subject</option>
-    			<option value="ge">Favorite GE</option>
-    			<option value="prol">Favorite Programming Language</option>
-    			<option value="food">Favorite Food</option>
-			</select>
-		<br><br>
-		<input type="submit" value="Submit">
-	</form>
+			<input type="radio" name="Flavor" id="f1">Favorite CMSC Subject
+			<br>
+			<input type="radio" name="Flavor" id="f2">Favorite GE
+			<br>
+			<input type="radio" name="Flavor" id="f3">Favorite Programming Language
+			<br>
+			<input type="radio" name="Flavor" id="f4">Favorite Food
+			<br>
+			<input type="radio" name="Flavor" id="f5">Facts about Charles
+			<br>
+			<br><button onclick="ShowInfo()">Check Flavor Availability</button><br>
+			<label id="FC"></label>
+			<br>
 			
 		<br><br><br><br><br><br>
 
@@ -46,3 +74,5 @@
 	</div>
 
 </body></html>
+
+
