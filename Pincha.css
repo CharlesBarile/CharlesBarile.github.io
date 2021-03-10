@@ -9,7 +9,7 @@
     text-align: center;
 }
 body{
-    background-image: url("piche.jpg");
+    background-image: url("spiderroach.jpg");
 	background-color: rgb(46, 46, 48);
     height: 100% auto;
     font-family: 'Courier New', Courier, monospace;
@@ -30,9 +30,6 @@ hr{
 	background-color: rgb(46, 46, 48);
 	height: 250 px;
     width:965px;
-}
-#Int{
-
 }
 #input {
     padding-left: 5 px ;
