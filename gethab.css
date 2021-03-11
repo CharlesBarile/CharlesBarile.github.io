@@ -22,6 +22,8 @@ body{
 }
 #menucl {
     background-color: #dad8d8;
+    opacity: 0%;
+
 }
 hr{
     border-width: 10px;
