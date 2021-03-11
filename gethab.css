@@ -9,20 +9,23 @@
     text-align: center;
 }
 body{
-    background-image: url("bground.jpg");
+    background-image: url("bgroundb.png");
 	background-color: rgb(46, 46, 48);
-    height: 200% auto;
+    /* height: 200% auto; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     font-family: 'Courier New', Courier, monospace;
 }
 #body{
-	background-color:rgb(46, 46, 48);
+	background-color:rgba(46, 46, 48,0.3);
 	width:960px;
 	margin: auto;
 	padding: 10px;
 }
 #menucl {
-    background-color: #dad8d8;
+    background-color :rgba(24, 23, 23, 0.6);
     text-align: center;
+    color: white;
 }
 hr{
     border-width: 10px;
