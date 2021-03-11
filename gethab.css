@@ -22,7 +22,7 @@ body{
 }
 #menucl {
     background-color: #dad8d8;
-
+    text-align: center;
 }
 hr{
     border-width: 10px;
@@ -32,3 +32,4 @@ hr{
 	height: 250 px;
     width:965px;
 }
+
