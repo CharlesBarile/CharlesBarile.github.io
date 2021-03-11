@@ -16,11 +16,11 @@
 			"He only had the fascination for the 'SpiderRoach' 2 months ago.",
 			"He wants to become a game developer.",
 			"He takes care of 1 cat and 6 dogs.",
-			"He put a total of - facts in this page.",
+			"He put a total of 19 facts in this option.",
 			"His former classmates/friends (High School) know about his singing voice, but will most likely be never heard in public.",
 			"He likes playing computer games.",
 			"You'll most likely never catch him singing.",
-			"If you do catch him singing, never let yourself be discovered.",
+			"He is a fan of anime and manga",
 			"He made a Twitter account just for giveaways.",
 			"He's a fan of cryptic messages, but never tries to solve any one that the finds.",
 			"He has played a lot of games of different genres.",
@@ -42,6 +42,7 @@
 				document.getElementById('FC').innerHTML = "Charles' favorite GE so far is Ethics (Ethics 1 to be specific). \n \n His reason was due to him learning more about different religions and views on life."
 			}else if (document.getElementById('f3').checked == true){
 				F = document.getElementById('f3').value
+				document.getElementById("pog").innerHTML = ""
 				document.getElementById('FC').innerHTML = ""
 				document.getElementById('FC').innerHTML = "Charles' favorite programming language so far is Java. \n \n His Reason was due to Java being one of the more known languages that can be used to create games."
 			}else if (document.getElementById('f4').checked == true) {
@@ -54,7 +55,7 @@
 				document.getElementById('FC').innerHTML = randomtext()
 			}
 			else{
-				document.getElementById('FError').innerHTML = "Please select information to show"
+				document.getElementById('FC').innerHTML = "Please select information to show."
 			}
 		}
 	</script>
@@ -62,7 +63,7 @@
 <body><div id="body">
 	<div id="menucl">
 	<div id="img">
-	<img src="GitHubProj.png" style="width: 965px;">
+	<img id="pog" src="GitHubProj.png" style="width: 965px;">
 	</div>
 	<hr style="size: 50px;">
 	<div id="Int">
@@ -71,7 +72,6 @@
 	</div>
 	<div id="form">
 		<p><b>The following information has been requested</b></p>
-		<div id="Perinf">
 		<br><b>
 		Student Name:</b>Charles Joshua Barile<br><br><b>
 		Nickname:</b>Charles<br><br>
